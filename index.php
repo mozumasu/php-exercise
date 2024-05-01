@@ -1,4 +1,5 @@
 <!-- GETメソッド -->
+<p>--GETメソッド--</p>
 <form action="get.php" method="GET">
   <label for="username">username : </label>
   <input type="text" name="username">
@@ -10,6 +11,7 @@
 </form>
 
 <!-- POSTメソッド -->
+<p>--POSTメソッド--</p>
 <form action="post.php" method="POST">
   <label for="username">username : </label>
   <input type="text" name="username">
@@ -21,6 +23,7 @@
 </form>
  
 <!-- フォームで配列を送る -->
+<p>--フォームで配列を送る--</p>
 <form action="receive.php">
   <div>
     <label for="account[id]">ID</label>
@@ -40,6 +43,7 @@
 <!-- 隠しフィールド
 画面には入力欄を表示したくないが、値をサーバーに送りたいフィールドのこと
 隠しフィールドは開発者ツールで値を変えて改ざんすることができるため、改ざんされたくない値はサーバー内に保存している値を使用する -->
+<p>--隠しフィールド--</p>
 <form action="post.php" method="POST">
   <div>
     個数：<input id="" type="number" name="num">

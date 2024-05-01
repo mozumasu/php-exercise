@@ -1,3 +1,4 @@
+<p>--GETメソッド--</p>
 <div>
   名前：<?php echo $_GET['username']; ?>
 </div>

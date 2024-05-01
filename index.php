@@ -19,7 +19,7 @@
   <br>
   <button type="submit">POSTメソッド</button>
 </form>
-
+ 
 <!-- フォームで配列を送る -->
 <form action="receive.php">
   <div>
@@ -35,4 +35,22 @@
     <input type="text" name="account[pwd]">
   </div>
  <input type="submit" value="配列を送信">
+</form>
+
+<!-- 隠しフィールド
+画面には入力欄を表示したくないが、値をサーバーに送りたいフィールドのこと
+隠しフィールドは開発者ツールで値を変えて改ざんすることができるため、改ざんされたくない値はサーバー内に保存している値を使用する -->
+<form action="post.php" method="POST">
+  <div>
+    個数：<input id="" type="number" name="num">
+  </div>
+  <div>
+    価格：<input id="" type="price" name="price">
+  </div>
+  <div>
+    割引：10%
+  </div>
+  <!-- 10%という値もサーバーに送りたいため、隠しフィールドを使う -->
+  <input type="hidden" name="discount" value="10">
+  <input type="submit" value="合計">
 </form>

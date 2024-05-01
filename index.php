@@ -58,3 +58,12 @@
   <input type="hidden" name="discount" value="10">
   <input type="submit" value="合計">
 </form>
+
+<p>--Cookie--</p>
+<?php
+setcookie('VISIT_COUNT', 1);
+echo "var_dump()でサーバーに送信されたCOOKIEの値\$_COOKIEの中身を確認<br>";
+var_dump($_COOKIE['VISIT_COUNT']);
+
+echo "<br>\$_COOKIEに値を代入してもサーバーのCOOKIEの値は変更されないため注意"
+?>

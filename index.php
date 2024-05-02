@@ -72,3 +72,13 @@ var_dump($_COOKIE['VISIT_COUNT']);
 
 echo "<br>\$_COOKIEに値を代入してもサーバーのCOOKIEの値は変更されないため注意"
 ?>
+
+<p>--Session--</p>
+<?php
+session_start();
+$_SESSION['VISIT_COUNT'] = 1;
+
+echo "echo \$_SESSION['VISIT_COUNT']は" , $_SESSION['VISIT_COUNT'] , "です<br>";
+
+echo "セッションファイルはupload_tmp_dirに保存される";
+phpinfo();

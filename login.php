@@ -8,7 +8,7 @@ if(isset($_POST['username'])
   && $_POST['pwd'] === 'pwd') {
     //ログイン成功
     $_SESSION['user'] = [
-    'name' => $POST['username'],
+    'name' => $_POST['username'],
     'pwd' => $_POST['pwd']
     ];
 }

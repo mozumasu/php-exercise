@@ -65,7 +65,7 @@ setcookie('VISIT_COUNT', 1, [
   //有効期限一ヶ月に設定
   'expires' => time() + 60 * 60 * 24 * 30,
   //cookieが有効なパスを指定
-  'path' => '/',
+  //'path' => '/',
 ]);
 echo "var_dump()でサーバーに送信されたCOOKIEの値\$_COOKIEの中身を確認<br>";
 var_dump($_COOKIE['VISIT_COUNT']);
